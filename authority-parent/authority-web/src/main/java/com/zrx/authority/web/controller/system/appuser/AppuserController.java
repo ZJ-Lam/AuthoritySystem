@@ -115,7 +115,6 @@ public class AppuserController extends BaseController {
 		} catch (Exception e) {
 			logger.error(e.toString(), e);
 		}
-
 	}
 
 	/**
@@ -126,7 +125,6 @@ public class AppuserController extends BaseController {
 		PageData pd = new PageData();
 		try {
 			pd = this.getPageData();
-
 			if (appuserService.findByUE(pd) != null) {
 				out.write("error");
 			} else {
