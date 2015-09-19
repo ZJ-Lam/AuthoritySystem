@@ -6,6 +6,10 @@
 
 package com.zrx.authority.service.information;
 
+import com.zrx.authority.domain.entity.Page;
+import com.zrx.authority.util.PageData;
+import java.util.List;
+
 /**
  * <p>Description  :</p>
  * <p>Title  :</p>
@@ -15,4 +19,15 @@ package com.zrx.authority.service.information;
  */
 public interface IPicturesService {
 
+    public void save(PageData pd) throws Exception ;
+    public void delete(PageData pd) throws Exception ;
+    public void edit(PageData pd) throws Exception ;
+    public List<PageData> list(Page page) throws Exception ;
+    public List<PageData> listAll(PageData pd) throws Exception ;
+    public PageData findById(PageData pd) throws Exception ;
+    public void deleteAll(String[] ArrayDATA_IDS) throws Exception ;
+    public List<PageData> getAllById(String[] ArrayDATA_IDS) throws Exception ;
+    public void delTp(PageData pd) throws Exception ;
+    
+            
 }
